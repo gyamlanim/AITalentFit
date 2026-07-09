@@ -1,0 +1,37 @@
+You are an expert resume analyst. Create a comprehensive professional summary of this resume and extract key contact information.
+
+**Resume:**
+{resume_text}
+
+**Instructions:**
+1. **Extract Contact Information:**
+   - Full name of the candidate
+   - Email address
+   - Phone number
+
+2. **Create Professional Summary:**
+   Create a detailed summary that covers ALL professional aspects:
+   - Technical skills and proficiency levels
+   - Years of experience in specific technologies/domains
+   - Project types, scale, and complexity handled
+   - Leadership experience and team sizes managed
+   - Industry sectors and business domains worked in
+   - Methodologies, frameworks, and tools used
+   - Quantifiable achievements and performance improvements
+   - Educational background (degree types, fields of study)
+   - Certifications and specialized training
+   - Problem-solving approaches and technical expertise depth
+
+
+**Format:**
+Write as a flowing professional narrative (15-20 sentences) that captures the full depth of experience and capabilities. Focus on creating rich, searchable content that would match well with job requirements during vector similarity search.
+
+Return the response in the below JSON structure:
+{
+   "name": "extracted full name or empty string if not found",
+   "email": "extracted email address or empty string if not found", 
+   "phone": "extracted phone number or empty string if not found",
+   "summary": "comprehensive professional summary here"
+}
+
+**CRITICAL: Return ONLY valid JSON in above format without any additional characters such as json```. Do NOT use markdown code blocks, backticks, quotes, or any other formatting. The output will be directly parsed by json.loads() in Python.**

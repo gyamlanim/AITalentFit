@@ -1,0 +1,46 @@
+# LLM Configuration
+llm:
+  default_model: "gpt-4"
+  temperature: 0.3
+  max_retries: 3
+  retry_delay: 1
+  
+  # API Endpoints
+  endpoints:
+    chat: "https://api.openai.com/v1/chat/completions"
+    embedding: "https://api.openai.com/v1/embeddings"
+  
+  # Token limits
+  max_tokens:
+    resume: 3000
+    job_description: 1000
+    criteria: 500
+
+# Application Settings
+app:
+  max_file_size_mb: 10
+  supported_formats: ["pdf", "docx"]
+  default_weights: true
+  auto_balance_weights: true
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Default Job Description Templates
+job_templates:
+  software_engineer: |
+    We are looking for a Software Engineer with experience in Python, REST APIs, 
+    and cloud platforms. Strong problem-solving skills and experience with agile 
+    development methodologies required.
+    
+  data_analyst: |
+    Seeking a Data Analyst with strong SQL, Excel, and data visualization skills. 
+    Experience with Python/R, statistical analysis, and business intelligence 
+    tools preferred.
+    
+  product_manager: |
+    Hiring a Product Manager to drive strategy, user research, and Agile execution. 
+    Experience with roadmap planning, stakeholder management, and market analysis 
+    required.
