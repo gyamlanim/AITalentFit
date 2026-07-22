@@ -32,7 +32,6 @@ Access at: http://localhost:8501
 ├── custom_rag.py               # Core RAG implementation
 ├── llm_interface.py            # Azure OpenAI integration
 ├── vector_db.py                 # Vector database operations
-├── config_loader.py            # Configuration management
 ├── config/config.yaml          # App/LLM configuration (no secrets)
 ├── Testing/                    # Jupyter notebooks for manual testing
 ├── data/sample_resumes/        # Synthetic sample resumes for demos
